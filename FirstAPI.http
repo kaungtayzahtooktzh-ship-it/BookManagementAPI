@@ -1,0 +1,33 @@
+@Root_URL = http://localhost:5238
+
+GET {{Root_URL}}/weatherforecast/
+Accept: application/json
+
+###
+GET {{Root_URL}}/api/books
+Accept: application/json
+
+###
+GET {{Root_URL}}/api/books/5
+Accept: application/json
+
+###
+POST {{Root_URL}}/api/books
+Content-Type: application/json
+{
+  "title": "Lord of The Rings",
+  "author":"W.K Tolkien",
+  "public_year": 1932
+}
+###
+PUT {{Root_URL}}/api/books/6
+Content-Type: application/json
+{
+    "book_id": 6,
+    "title": "The Snare",
+    "author": "Theo Gallant",
+    "public_year": 2024
+}
+
+###
+DELETE {{Root_URL}}/api/books/4

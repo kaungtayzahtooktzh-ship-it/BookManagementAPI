@@ -1,0 +1,20 @@
+
+# Build output
+bin/
+obj/
+
+# Visual Studio user-specific files
+*.csproj.user
+*.suo
+.vs/
+
+# IDE and editor files
+.vscode/
+
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# Local application configuration
+appsettings.Development.json
